@@ -1,9 +1,8 @@
 import type { StorybookConfig } from '@storybook/react-vite';
-const rootMain = require('../../../../.storybook/main');
 
 const config: StorybookConfig = {
   stories: ['../src/lib/**/*.stories.@(js|jsx|ts|tsx|mdx)'],
-  addons: ['@storybook/addon-essentials', '@storybook/addon-interactions', ...rootMain.addons, '@nrwl/react/plugins/storybook'],
+  addons: ['@storybook/addon-essentials', '@storybook/addon-interactions'],
   docs: {
     autodocs: true,
   },

@@ -3,7 +3,8 @@
   "version": "0.0.0",
   "license": "MIT",
   "scripts": {
-    "start": "npx nx serve healthcircle"
+    "start": "npx nx serve healthcircle",
+    "storybook": "nx storybook ui"
   },
   "private": true,
   "dependencies": {
