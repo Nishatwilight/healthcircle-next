@@ -1,0 +1,26 @@
+{
+  "name": "healthcircle-e2e",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "apps/healthcircle-e2e/src",
+  "targets": {
+    "e2e": {
+      "executor": "@nx/cypress:cypress",
+      "options": {
+        "cypressConfig": "apps/healthcircle-e2e/cypress.config.ts",
+        "testingType": "e2e",
+        "devServerTarget": "healthcircle:serve"
+      },
+      "configurations": {
+        "production": {
+          "devServerTarget": "healthcircle:serve:production"
+        }
+      }
+    },
+    "lint": {
+      "executor": "@nx/eslint:lint",
+      "outputs": ["{options.outputFile}"]
+    }
+  },
+  "tags": [],
+  "implicitDependencies": ["healthcircle"]
+}
