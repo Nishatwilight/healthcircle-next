@@ -1,11 +1,7 @@
+import TodoList from './_components/TodoList';
 import './global.css';
 
 export default async function Index() {
-  /*
-   * Replace the elements below with your own.
-   *
-   * Note: The corresponding styles are in the ./index.css file.
-   */
   return (
       <div className="wrapper">
         <div className="container">
@@ -14,10 +10,11 @@ export default async function Index() {
              Hello world!
             </h1>
             <h1 className="bg-customText1">
-             Hello world!
+            <TodoList></TodoList>
             </h1>
           </div>
         </div>
       </div>
+      
   );
 }

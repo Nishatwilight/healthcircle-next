@@ -1,5 +1,6 @@
+import Provider from './api/trpc/[trpc]/_trpc/provider';
 import './global.css';
-import {Providers} from "./providers";
+// import {Providers} from "./providers";
 
 
 export const metadata = {
@@ -12,9 +13,11 @@ export default function RootLayout({children}: { children: React.ReactNode }) {
   return (
     <html lang="en" className='dark'>
       <body>
-        <Providers>
+        {/* <Providers> */}
+          <Provider>
           {children}
-        </Providers>
+          </Provider>
+        {/* </Providers> */}
       </body>
     </html>
   );

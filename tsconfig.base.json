@@ -15,8 +15,11 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
+      "@healthcircle/client": ["packages/client/src/index.ts"],
+      "@healthcircle/client/server": ["packages/client/src/server.ts"],
       "@healthcircle/packages": ["packages/src/index.ts"],
-      "@healthcircle/packages/server": ["packages/src/server.ts"],
+      "@healthcircle/server": ["packages/server/src/index.ts"],
+      "@healthcircle/server/server": ["packages/server/src/server.ts"],
       "@healthcircle/ui": ["packages/ui/src/index.ts"]
     }
   },
