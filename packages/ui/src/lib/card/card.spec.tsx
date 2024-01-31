@@ -1,11 +1,11 @@
 import { render } from '@testing-library/react';
 
-import Button from './button';
+import Card from './card';
 import React from 'react';
 
-describe('Button', () => {
+describe('Card', () => {
   it('should render successfully', () => {
-    const { baseElement } = render(<Button children={undefined} />);
+    const { baseElement } = render(<Card />);
     expect(baseElement).toBeTruthy();
   });
 });

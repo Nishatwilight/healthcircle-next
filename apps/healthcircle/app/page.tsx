@@ -1,3 +1,5 @@
+// 'use client'
+import { Button } from '@healthcircle/ui';
 import './global.css';
 
 export default async function Index() {
@@ -17,6 +19,10 @@ export default async function Index() {
              Hello world!
             </h1>
           </div>
+           <Button>Primary</Button> <br /><br />
+           <Button variant="secondary">Secondary</Button><br /><br />
+           <Button size="large">Large Button</Button> <br /><br />
+           <Button size="small">Large Button</Button>
         </div>
       </div>
   );
