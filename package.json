@@ -3,8 +3,13 @@
   "version": "0.0.0",
   "license": "MIT",
   "scripts": {
-    "start": "npx nx serve healthcircle"
+    "start": "npx nx serve healthcircle",
+    "drizzle-kite": "drizzle-kit generate:sqlite",
+    "drizzle-push" : "drizzle-kit push:sqlite"
   },
+
+
+
   "private": true,
   "dependencies": {
     "@nextui-org/react": "^2.2.9",
@@ -14,11 +19,15 @@
     "@trpc/client": "^10.45.0",
     "@trpc/react-query": "^10.45.0",
     "@trpc/server": "^10.45.0",
+    "@types/better-sqlite3": "^7.6.9",
+    "better-sqlite3": "^9.3.0",
+    "drizzle-orm": "^0.29.3",
     "framer-motion": "^11.0.3",
     "next": "13.4.4",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "tslib": "^2.3.0"
+    "tslib": "^2.3.0",
+    "zod": "^3.22.4"
   },
   "devDependencies": {
     "@babel/core": "^7.14.5",
@@ -55,6 +64,7 @@
     "autoprefixer": "^10.4.17",
     "babel-jest": "^29.4.1",
     "cypress": "^13.0.0",
+    "drizzle-kit": "^0.20.13",
     "eslint": "~8.48.0",
     "eslint-config-next": "13.4.4",
     "eslint-config-prettier": "^9.0.0",

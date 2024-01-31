@@ -20,6 +20,8 @@
       "@healthcircle/packages": ["packages/src/index.ts"],
       "@healthcircle/server": ["packages/server/src/index.ts"],
       "@healthcircle/server/server": ["packages/server/src/server.ts"],
+      "@healthcircle/tailwind": ["packages/tailwind/src/index.ts"],
+      "@healthcircle/tailwind/server": ["packages/tailwind/src/server.ts"],
       "@healthcircle/ui": ["packages/ui/src/index.ts"]
     }
   },

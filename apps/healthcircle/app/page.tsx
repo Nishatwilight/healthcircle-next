@@ -1,20 +1,14 @@
 import TodoList from './_components/TodoList';
+import {serverClient} from './api/trpc/[trpc]/_trpc/serverClient'
 import './global.css';
 
 export default async function Index() {
+  const todos = await serverClient.getTodos()
   return (
-      <div className="wrapper">
-        <div className="container">
-          <div id="welcome">
-          <h1 className="text-3xl font-bold underline bg-red-500">
-             Hello world!
-            </h1>
-            <h1 className="bg-customText1">
-            <TodoList></TodoList>
-            </h1>
-          </div>
-        </div>
-      </div>
+       <><div className='bg-custom-text2'>hello tailwind works!</div><div>
+      <TodoList initialTodos={todos}></TodoList>
+    </div></>
+   
       
   );
 }
