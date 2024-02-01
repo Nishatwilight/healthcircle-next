@@ -1,1 +1,4 @@
-@import '../../../packages/ui/dist/output.css'
+@import '../../../packages/ui/dist/output.css';
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
